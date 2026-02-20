@@ -15,7 +15,7 @@ A zero-dependency, tree-shakeable, strongly typed environment variable validator
 ## Installation
 
 ```bash
-npm install envcheck
+npm install @navnathgunjal/envcheck
 ```
 
 ## Basic Usage

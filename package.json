@@ -1,5 +1,5 @@
 {
-  "name": "envcheck",
+  "name": "@navnathgunjal/envcheck",
   "version": "1.0.0",
   "description": "Zero-dependency, strongly typed environment variable validator for TypeScript",
   "main": "./dist/index.js",
@@ -12,7 +12,18 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavnathGunjal07/envcheck.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "vitest run",
